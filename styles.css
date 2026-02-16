@@ -77,7 +77,7 @@ body{
   /* About section */
 
 
-.about-section {
+/* .about-section {
   padding: 100px 20px;
   background-color: #ffffff;
 }
@@ -149,13 +149,13 @@ body{
 .skill-tag:hover{
   color:white ;
   background:  #7461c1; 
-}
+} */
 
 
 
      /* --- Contect Section  */
 
-.contact {
+/* .contact {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -212,8 +212,8 @@ input, textarea {
     font-size: 15px;
     outline: none;
     transition: 0.3s;
-}
-
+} */
+/* 
 input, textarea :hover{
     border: 1px solid rgba(255, 255, 255, 0.463);
     background: rgba(255, 255, 255, 0.049);
@@ -237,4 +237,48 @@ input, textarea :hover{
 .send-btn:hover {
     transform: translateY(-2px);
     opacity: 0.9;
+} */
+
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none; 
+    }
+
+    .burger {
+        display: block; 
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 70%;
+        background-color: #f8f9fd;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        z-index: 99;
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .mobile-menu[data-visible="true"] {
+        transform: translateX(0%);
+        display: flex;
+    }
+
+    .mobile-menu .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    /* Hide/Show icons based on state */
+    .burger i[data-visible="false"] {
+        display: none;
+    }
 }
