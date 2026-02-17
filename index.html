@@ -3,82 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Shape Portfolio</title>
+    <title>Collaboration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Header / Navbar -->
-    <header>
+    <!--  HEADER -->
+
+<header class="header">
+
+    <!-- Burger Button -->
+    <button id="burgerBtn" class="burger" aria-expanded="false" aria-controls="mobileMenu">
+        <i id="openIcon" class="fa-solid fa-bars"></i>
+        <i id="closeIcon" class="fa-solid fa-xmark" style="display: none;"></i>
+    </button>
+
+    <!-- Desktop Menu -->
+    <nav class="container navbar">
         <div class="logo">Personal Shape</div>
-        <nav>
-            <ul class="nav-links">
-                <!-- Halkan waxaan ku xiray Sections-ka hoose (#home, #about, etc.) -->
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <!-- Mobile Menu Icon -->
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
-    </header>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <!-- Hero Section (ID: home) -->
-    <section class="hero" id="home">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
+    <!-- Mobile Menu -->
+    <nav id="mobileMenu" class="mobile-menu" data-visible="false">
+        <div class="logo">Personal Shape</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-        <div class="hero-content">
-            <h1>Transforming Ideas <br> Into Beautiful <br> Experiences</h1>
-            <p>I craft digital experiences that captivate, engage, and inspire through thoughtful design and innovative solutions.</p>
-            <a href="#portfolio" class="btn">Explore My Work</a>
+</header>
+
+            <!-- hero  -->
+
+<section id="home" class="Hero-Section">
+    <h4 class="p1">Creative Designer</h4>
+
+    <h1 class="Heading1">
+        Transforming Ideas <br>
+        <span>Into Beautiful</span><br>
+        Experiences
+    </h1>
+
+    <p class="pragraph2">
+        I craft digital experiences that captivate, engage, and inspire <br>
+        <span>through thoughtful design and innovative solutions</span>
+    </p>
+
+    <div class="Action-btn">
+        <button>EXPLORE MY WORK</button>
+    </div>
+</section>
+
+<!--  About  -->
+
+<section id="about" class="about-section">
+    
+  <div class="container-about">
+
+    <h2 class="section-title">About Me</h2>
+
+    <div class="content">
+      <div class="image-box">
+        <img src="https://images.unsplash.com/photo-1567324216289-97cc4134f626?w=1200&auto=format&fit=crop&q=60" alt="Portrait">
+      </div>
+
+      <div class="text-box">
+        <h3>Passionate about creating meaningful digital experiences</h3>
+
+        <p>
+            With over 5 years of experience in digital design, I specialize in creating user-centered solutions that bridge the gap between functionality and aesthetics. My approach combines strategic thinking with creative execution to deliver impactful results.
+        </p>
+
+        <p>
+            I believe that great design is not just about how it looks, but how it works and how it makes people feel. Every project is an opportunity to solve problems and create connections that matter..
+        </p>
+        <p>
+          When I'm not designing, you'll find me exploring new technologies, sketching ideas, or seeking inspiration in nature and architecture.
+        </p>
+
+        <div class="skills-container">
+          <span class="skill-tag">UI/UX Design</span>
+          <span class="skill-tag">Web Development</span>
+          <span class="skill-tag">Brand Identity</span>
+          <span class="skill-tag">Motion Graphics</span>
+          <span class="skill-tag">Prototyping</span>
+          <span class="skill-tag">Design Systems</span>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- About Section (ID: about) -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="section-title">
-                <h2>About Me</h2>
-                <div class="underline"></div>
-            </div>
+ <!-- Portfolio Section -->
 
-            <div class="about-content">
-                <div class="about-image">
-                    <!-- Sawir -->
-                     <img src="https://images.unsplash.com/photo-1544717305-f9c88f2897bc?w=500&auto=format&fit=crop&q=60" alt="About Me">
-                </div>
-
-                <div class="about-text">
-                    <h3>Passionate about creating meaningful digital experiences</h3>
-                    <p>With over 5 years of experience in digital design, I specialize in creating user-centered solutions that bridge the gap between functionality and aesthetics.</p>
-                    <p>I believe that great design is not just about how it looks, but how it works and how it makes people feel.</p>
-                    
-                    <div class="skills">
-                        <span class="skill-tag">UI/UX Design</span>
-                        <span class="skill-tag">Web Development</span>
-                        <span class="skill-tag">Brand Identity</span>
-                        <span class="skill-tag">Motion Graphics</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section (ID: portfolio) -->
-    <section class="portfolio" id="portfolio">
-        <div class="container">
+<section class="portfolio" id="portfolio">
+        <div class="container-port">
             <div class="section-title">
                 <h2>Featured Work</h2>
-                <div class="underline"></div>
             </div>
 
             <div class="portfolio-grid">
@@ -111,7 +142,7 @@
                             <span>Figma</span>
                             <span>React Native</span>
                             <span>Figma</span>
-                            <span>React Native</span>
+                           
                         </div>
                     </div>
                 </div>
@@ -135,10 +166,10 @@
                 <!-- Project 3 -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://plus.unsplash.com/premium_photo-1720610706902-f92d98fb8b35?w=500&auto=format&fit=crop&q=60" alt="Dashboard">
+                        <img src="https://media.istockphoto.com/id/2217535910/photo/brand-identity-design-blueprint.webp?a=1&b=1&s=612x612&w=0&k=20&c=cTzR2oLoJQKJqY7Y01HO0tYWkfEafxUgxS_XFOn5xGU=" alt="Dashboard">
                     </div>
                     <div class="project-info">
-                        <h3>Dashboard Interface</h3>
+                        <h3>Brand Identity System</h3>
                         <p>Clean and functional dashboard design for data analytics platform.</p>
                         <div class="project-tags">
                             <span>Vue.js</span>
@@ -151,10 +182,10 @@
                 <!-- Project 3 -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://plus.unsplash.com/premium_photo-1720610706902-f92d98fb8b35?w=500&auto=format&fit=crop&q=60" alt="Dashboard">
+                        <img src="https://plus.unsplash.com/premium_photo-1684357277527-f6e5708ccdb4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dashboard">
                     </div>
                     <div class="project-info">
-                        <h3>Dashboard Interface</h3>
+                        <h3>Marketing Website</h3>
                         <p>Clean and functional dashboard design for data analytics platform.</p>
                         <div class="project-tags">
                             <span>Vue.js</span>
@@ -167,10 +198,10 @@
                 <!-- Project 3 -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://plus.unsplash.com/premium_photo-1720610706902-f92d98fb8b35?w=500&auto=format&fit=crop&q=60" alt="Dashboard">
+                        <img src="https://plus.unsplash.com/premium_photo-1727243128559-b3be819003d1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fENyZWF0aXZlJTIwUG9ydGZvbGlvfGVufDB8fDB8fHww" alt="Dashboard">
                     </div>
                     <div class="project-info">
-                        <h3>Dashboard Interface</h3>
+                        <h3>Creative Portfolio</h3>
                         <p>Clean and functional dashboard design for data analytics platform.</p>
                         <div class="project-tags">
                             <span>Vue.js</span>
@@ -184,45 +215,46 @@
         </div>
     </section>
 
-    <!-- Contact Section (ID: contact) -->
-    <section class="contact" id="contact">
-        <div class="shape shape-4"></div>
-        <div class="shape shape-5"></div>
+ <!-- CONTACT -->
+<section id="contact" class="contact">
+    <div class="container-contact">
+        <h2>Let's Work Together</h2>
 
-        <div class="container">
-            <div class="section-title white-title">
-                <h2>Let's Work Together</h2>
-                <div class="underline"></div>
+        <p class="subtitle">
+            Ready to bring your vision to life? Let's create something amazing together.
+        </p>
+
+        <form id="contactForm" class="contact-form">
+
+            <div class="name_email">
+                <div class="input">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" placeholder="Full name" required>
+                </div>
+
+                <div class="input">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Email@example.com" required>
+                </div>
             </div>
 
-            <p class="contact-desc">Ready to bring your vision to life? Let's discuss how we can create something amazing together.</p>
+            <div class="input">
+                <label for="subject">Subject</label>
+                <input id="subject" type="text" placeholder="What's this about?">
+            </div>
 
-            <form class="contact-form">
-                <div class="form-row">
-                    <div class="input-group">
-                        <label>Name</label>
-                        <input type="text" placeholder="Your full name">
-                    </div>
-                    <div class="input-group">
-                        <label>Email</label>
-                        <input type="email" placeholder="your.email@example.com">
-                    </div>
-                </div>
-                <div class="input-group">
-                    <label>Subject</label>
-                    <input type="text" placeholder="What's this about?">
-                </div>
-                <div class="input-group">
-                    <label>Message</label>
-                    <textarea placeholder="Tell me about your project..."></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-        </div>
-    </section>
+            <div class="input">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
 
-    <!-- Footer Section -->
-    <footer class="main-footer">
+            <button type="submit" class="send-btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+   <!-- Footer -->
+<footer class="main-footer">
         <div class="footer-container">
             <div class="footer-left">
                 <p>&copy; 2025 Personal Shape. All rights reserved.</p>
@@ -230,32 +262,29 @@
             <div class="footer-right">
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Use</a>
-                <a href="#">Sitemap</a>
-                <!-- Active Link -->
-                <a href="https://templatemo.com" target="_blank" rel="nofollow" class="template-link">Provided by TemplateMo</a>
+                <a href="#">Sitemap</a>    
             </div>
         </div>
-    </footer>
+</footer>
 
-    <!-- JavaScript for Mobile Menu & Scroll -->
-    <script>
-        const burger = document.querySelector('.burger');
-        const nav = document.querySelector('.nav-links');
-        const navLinks = document.querySelectorAll('.nav-links li a');
+<!-- Actions of java script -->
+<script>
+    const burgerBtn = document.getElementById("burgerBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const openIcon = document.getElementById("openIcon");
+    const closeIcon = document.getElementById("closeIcon");
 
-        // Toggle Menu Open/Close
-        burger.addEventListener('click', () => {
-            nav.classList.toggle('nav-active');
-            burger.classList.toggle('toggle');
-        });
+    burgerBtn.addEventListener("click", () => {
+      const isOpen = mobileMenu.getAttribute("data-visible") === "true";
 
-        // Halkan: Marka link la gujiyo, menu-ga ha xirmo
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                nav.classList.remove('nav-active');
-                burger.classList.remove('toggle');
-            });
-        });
-    </script>
+        mobileMenu.setAttribute("data-visible", !isOpen);
+        burgerBtn.setAttribute("aria-expanded", !isOpen);
+
+        openIcon.style.display = isOpen ? "block" : "none";
+        closeIcon.style.display = isOpen ? "none" : "block";
+    });
+
+</script>
+
 </body>
 </html>

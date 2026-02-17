@@ -15,6 +15,7 @@ A modern, responsive personal portfolio website featuring a Glassmorphism design
 
 ## 📷 Screenshots
 ![alt text](image/REsponsive.png)
+
 ## 👥 Authors
 *   **Nur Abdi Adan**
 *   **Mohammed ibrahim Mohammed**
