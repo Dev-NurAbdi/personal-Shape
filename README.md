@@ -17,7 +17,7 @@ A modern, responsive personal portfolio website featuring a Glassmorphism design
 ![alt text](image/REsponsive.png)
 ## 👥 Authors
 *   **Nur Abdi Adan**
-*   **Yasir**
+*   **Mohammed ibrahim Mohammed**
 
 ## 📦 How to Run
 Simply download the repository and open `index.html` in your web browser.
